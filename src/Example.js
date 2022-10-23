@@ -2,7 +2,11 @@ import React from "react";
 
 export default function Example(props) {
   if (props.example) {
-    return <span className="example">Example: {props.example}</span>;
+    return (
+      <div className="example">
+        <span className="fw-semibold">Example:</span> {props.example}
+      </div>
+    );
   } else {
     return null;
   }

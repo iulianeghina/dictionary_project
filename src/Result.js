@@ -1,5 +1,6 @@
 import React from "react";
 import Definition from "./Definition";
+import Synonyms from "./Synonyms";
 
 export default function Result(props) {
   if (props.result) {
@@ -8,10 +9,11 @@ export default function Result(props) {
         <h4>{props.result.word}</h4>
         {props.result.meanings.map((meaning, index) => {
           return (
-            <p key={index}>
-              <em className="fw-bold">{meaning.partOfSpeech}</em>
+            <div key={index}>
+              <strong>{meaning.partOfSpeech}</strong>
               <Definition definition={meaning.definitions} />
-            </p>
+              <Synonyms synonyms={meaning.synonyms} />
+            </div>
           );
         })}
       </div>
