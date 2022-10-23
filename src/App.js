@@ -1,4 +1,3 @@
-import "./App.css";
 import Dictionary from "./Dictionary";
 
 function App() {
@@ -6,9 +5,17 @@ function App() {
     <div className="App">
       <div className="container">
         <header className="App-header text-center mb-5 mt-5">
-          Dictionary project
+          <div className="dictionary-logo">
+            <div className="letter">D</div>
+          </div>
+          <span className="abreviation fw-normal">
+            EED
+            <div className="dictionary-name">
+              English explanatory dictionary
+            </div>
+          </span>
         </header>
-        <Dictionary />
+        <Dictionary defaultKeyword="sunset"/>
       </div>
     </div>
   );

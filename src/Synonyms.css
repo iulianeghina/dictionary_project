@@ -1,0 +1,15 @@
+span {
+  color: #70757a;
+}
+div ul {
+  margin: 0;
+  padding-left: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+li {
+  list-style: none;
+  padding-right: 10px;
+ 
+}

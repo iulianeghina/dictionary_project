@@ -1,0 +1,15 @@
+div {
+  margin-bottom: 15px;
+}
+a.listen-btn {
+  margin-right: 5px;
+  text-decoration: none;
+  border: #9670f4 solid 1px;
+  padding: 5px 20px;
+  border-radius: 25px;
+  transition: all 200ms ease-in-out;
+}
+a.listen-btn:hover {
+  background: #9670f4;
+  color: white;
+}
