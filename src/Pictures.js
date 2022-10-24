@@ -13,7 +13,7 @@ export default function Pictures(props) {
                   <img
                     className="picture-searched-word img-fluid rounded"
                     src={picture.src.landscape}
-                    alt="descriptive picture of searched word"
+                    alt="searched word"
                   />
                 </a>
               </div>
