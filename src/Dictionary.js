@@ -8,13 +8,13 @@ export default function Dictionary(props) {
   let [response, setResponse] = useState(null);
   let [loaded, setLoaded] = useState(false);
 
-  function handleResponse(response) {
+  function handleDictionaryResponse(response) {
     setResponse(response.data[0]);
   }
 
   function search() {
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
-    axios.get(apiUrl).then(handleResponse);
+    axios.get(apiUrl).then(handleDictionaryResponse);
   }
 
   function load() {
@@ -52,14 +52,16 @@ export default function Dictionary(props) {
             <div className="col-3">
               <button
                 type="submit"
-                class="btn btn-primary"
+                className="btn btn-primary"
                 onSubmit={handleSubmit}
               >
                 Search
               </button>
             </div>
           </form>
-          <p className="sugested-words">sugested words: mirror, wine, plant, yoga... </p>
+          <p className="sugested-words">
+            sugested words: mirror, wine, plant, yoga...{" "}
+          </p>
         </section>
         <Result result={response} />
       </div>

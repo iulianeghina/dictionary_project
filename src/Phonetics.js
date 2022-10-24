@@ -3,11 +3,11 @@ import "./Phonetics.css";
 
 export default function Phonetics(props) {
   return (
-    <div className="phonetics">
+    <div>
       {props.phonetics.map((phonetic, index) => {
-        if (phonetic.text.length > 0 && phonetic.audio.length > 0) {
+        if (phonetic.audio.length > 0) {
           return (
-            <div key={index}>
+            <div className="phonetics" key={index}>
               <a
                 className="listen-btn"
                 href={phonetic.audio}
