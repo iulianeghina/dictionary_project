@@ -2,6 +2,10 @@ body {
   background: #f9f8fe;
   font-family: "PT Sans", sans-serif;
 }
+.App {
+  max-width: 85%;
+  margin: 0 auto;
+}
 a {
   color: #9670f4;
 }
@@ -22,9 +26,6 @@ header .abreviation {
 header .dictionary-name {
   font-size: 8px;
   margin-top: -15px;
-}
-button {
-  width: -webkit-fill-available;
 }
 .App-header {
   margin: 30px 0;
