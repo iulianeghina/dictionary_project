@@ -6,9 +6,6 @@ body {
   max-width: 85%;
   margin: 0 auto;
 }
-a {
-  color: #9670f4;
-}
 header .dictionary-logo {
   font-size: 46px;
   font-family: "Sacramento", cursive;
@@ -37,4 +34,8 @@ header .dictionary-name {
 .letter {
   position: relative;
   bottom: -5px;
+}
+footer {
+  text-align: center;
+  font-size: 14px;
 }

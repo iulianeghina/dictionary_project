@@ -15,7 +15,28 @@ function App() {
             </div>
           </span>
         </header>
-        <Dictionary defaultKeyword="sunset"/>
+        <Dictionary defaultKeyword="sunset" />
+        <footer>
+          This dictionary was coded by Iulia Neghina and it's{" "}
+          <a
+            href="https://github.com/iulianeghina/dictionary_project"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {" "}
+            open-sourced
+          </a>{" "}
+          on Github and hosted on{" "}
+          <a
+            href="https://heartfelt-parfait-bffae4.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {" "}
+            Netlify
+          </a>
+          .
+        </footer>
       </div>
     </div>
   );

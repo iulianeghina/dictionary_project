@@ -8,6 +8,7 @@ a.listen-btn {
   padding: 5px 20px;
   border-radius: 25px;
   transition: all 200ms ease-in-out;
+  color: #9670f4;
 }
 a.listen-btn:hover {
   background: #9670f4;
