@@ -13,7 +13,7 @@ button {
   border-radius: 6px;
   box-shadow: 0 10px 10px rgb(0 0 0 / 10%);
 }
-p.sugested-words {
+div.sugested-words {
   font-size: 14px;
   color: #70757a;
   margin-top: 5px;

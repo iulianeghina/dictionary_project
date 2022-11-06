@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./Player.css"
+import "./Player.css";
 
 export default function Player(props) {
   const [audio, setAudio] = useState(new Audio(null));
@@ -11,9 +11,12 @@ export default function Player(props) {
   }
 
   useEffect(() => {
-    playing ? audio.play() : audio.play();
-  }, [playing]);
+    playing ? audio.play() : audio.pause();
+  }, [playing, audio]);
 
+  useEffect(() => {
+    audio.addEventListener("ended", () => setPlaying(false));
+  }, [audio]);
 
   return (
     <div>

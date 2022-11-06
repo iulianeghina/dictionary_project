@@ -14,8 +14,8 @@ export default function Result(props) {
         </section>
         {props.result.meanings.map((meaning, index) => {
           return (
-            <section>
-              <div key={index}>
+            <section key={index}>
+              <div>
                 <div className="part-of-speech fw-semibold">
                   {meaning.partOfSpeech}
                 </div>

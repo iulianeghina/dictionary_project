@@ -15,7 +15,6 @@ export default function Dictionary(props) {
   }
 
   function handlePexelsResponse(response) {
-    console.log(response.data);
     setPhotos(response.data.photos);
   }
 
@@ -76,9 +75,9 @@ export default function Dictionary(props) {
               </button>
             </div>
           </form>
-          <p className="sugested-words">
+          <div className="sugested-words">
             sugested words: mirror, wine, plant, yoga...{" "}
-          </p>
+          </div>
         </section>
         <Result result={response} />
         <Pictures pictures={photos} />
