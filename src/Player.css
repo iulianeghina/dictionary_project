@@ -1,0 +1,13 @@
+button.listen-btn {
+  margin-right: 5px;
+  background-color: #fff;
+  border: #9670f4 solid 1px;
+  padding: 5px 20px;
+  border-radius: 25px;
+  transition: all 200ms ease-in-out;
+  color: #9670f4;
+}
+button.listen-btn:hover {
+  background: #9670f4;
+  color: white;
+}
